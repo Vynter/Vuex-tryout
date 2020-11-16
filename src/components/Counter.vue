@@ -32,4 +32,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+p {
+  font-weight: bold;
+}
+</style>
