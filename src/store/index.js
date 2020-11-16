@@ -1,15 +1,22 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from "vue";
+import Vuex from "vuex";
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
+    currentValue: 0,
   },
+  //commit les mutations
   mutations: {
+    INCREMENT_COUNTER(state) {
+      state.currentValue += 1;
+    },
+    DECREMENT_COUNTER(state) {
+      state.currentValue -= 1;
+    },
   },
-  actions: {
-  },
-  modules: {
-  }
-})
+  //dispatch les actions
+  actions: {},
+  modules: {},
+});
